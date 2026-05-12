@@ -2,9 +2,10 @@ import Layout from "./layout";
 
 
 function HomePage() {
-    return <div>
+    return <div className="d-flex justify-content-center align-items-center flex-column">
         <h1>BENVENUTI NEL NOSTRO STORE</h1>
-    </div>
+        <img src="/public/img/Gemini_Generated_Image_txybabtxybabtxyb.png" alt="immagine store" />
+    </div >
 }
 
 export default HomePage;

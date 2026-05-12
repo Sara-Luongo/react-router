@@ -1,8 +1,21 @@
-import HelloClasse154 from "./components/HelloClasse154";
+import { BrowserRouter, Routes, Route } from "react-router";
+import HomePage from "./components/HomePage";
+import Layout from "./components/Layout";
+import ChiSiamo from "./components/ChiSiamo";
+import Prodotti from "./components/Prodotti";
 
 function App() {
-  return (
-    <HelloClasse154 />
-  );
+  return <BrowserRouter>
+    <Routes>
+
+      <Route path="" element={<Layout />}>
+        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/ChiSiamo" element={<ChiSiamo />} />
+        <Route path="/prodotti" element={<Prodotti />} />
+      </Route>
+
+    </Routes>
+  </BrowserRouter>
+
 }
 export default App;

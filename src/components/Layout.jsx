@@ -7,7 +7,7 @@ function Layout() {
         <div className="container">
             <nav className="d-flex justify-content-center align-items-center gap-3">
                 <Link to='/HomePage'>HOME PAGE</Link>
-                <Link to='/Prodotti'>PRODOTTI</Link>
+                <Link to='/ListaProdotti'>PRODOTTI</Link>
                 <Link to='/ChiSiamo'> CHI SIAMO</Link>
             </nav>
             <Outlet />

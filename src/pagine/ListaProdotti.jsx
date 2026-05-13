@@ -15,7 +15,7 @@ function ListaProdotti() {
             })
     }, []);
 
-    return <div className="row mt-3">
+    return <div className=" mt-3">
         <ul>
             {listaProdotti.map(prodotti => {
                 return <li key={prodotti.id}>

@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import ChiSiamo from "./pagine/ChiSiamo";
 import ListaProdotti from "./pagine/ListaProdotti";
 import NotFound from "./pagine/NotFound";
+import Prodotto from "./pagine/Prodotto";
 
 function App() {
   return <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/ChiSiamo" element={<ChiSiamo />} />
         <Route path="/Listaprodotti" element={<ListaProdotti />} />
+        <Route path="prodotto/:prodottiId" element={<Prodotto />} />
         <Route path="*" element={<NotFound />} />
       </Route>
 
